@@ -1,6 +1,7 @@
 # netflix-clone
 
-## Projeto desenvolvido durante bootcamp da Digital Innovation One, curso "Recriando a Interface do Netflix"
+### Projeto desenvolvido durante bootcamp da Digital Innovation One
+### Curso: "Recriando a Interface do Netflix"
 
 ### Tecnologias utilizadas:
 
