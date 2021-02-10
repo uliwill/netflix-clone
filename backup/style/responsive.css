@@ -1,0 +1,45 @@
+@media screen and (max-width:700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+    .filme-principal .container {
+       
+        
+      }
+
+    .filme-principal .container .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filme-principal .container .botao {
+        margin-top: 5px;
+        width: 300px;
+      }
+
+    header .container nav {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .filme-principal .container .descricao {
+        width: 50%;
+      }
+}
+
+@media screen and (max-width:700px) {
+    .filme-principal .container .descricao {
+        width: 70%;
+      }
+}
+
+@media screen and (max-width:500px) {
+    .filme-principal .container .descricao {
+        width: 90%;
+      }
+}
