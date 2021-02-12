@@ -13,6 +13,6 @@
 - CSS3
 - Javascript
 
-# uwr-games
+# uwr-videos
 
-### Projeto final do curso, executado sobre modelo Netflix. Agora uma página sobre jogos, com todos os links e botões funcionais.
+### Projeto final do curso, executado sobre modelo Netflix, com todos os links e botões funcionais.
