@@ -15,158 +15,177 @@
     <title>UWR VÍDEOS</title>
   </head>
   <body>
-    <div class="container-geral">
-      <header>
-        <nav class="topnav" id="myTopnav">
-          <div class="logo-container">
-            <h2 class="logo"><i class="far fa-play-circle"></i> UWR VÍDEOS</h2>
-          </div>
-          <div class="links">
-            <a href="#"><i class="fas fa-home"></i> Início</a>
-            <a href="#"><i class="fas fa-film"></i> Filmes</a>
-            <a href="#"><i class="fas fa-tv"></i> Séries</a>
-            <a
-              href="javascript:void(0);"
-              class="icon"
-              onclick="navResponsivo()"
-            >
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-        </nav>
-      </header>
-
-      <main>
-        <!-- <div class="filme-principal">
-          <div class="container">
-            <h3 class="titulo">VINGADORES GUERRA INIFINITA</h3>
-            <p class="descricao">
-              Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater
-              seu inimigo mais poderoso, o maligno Thanos. Em uma missão para
-              coletar todas as seis pedras infinitas, Thanos planeja usá-las
-              para infligir sua vontade maléfica sobre a realidade.
-            </p>
-            <div class="botoes">
-              <button class="botao" role="button">
-                <i class="fas fa-play"></i> TRAILER
-              </button>
-              <button class="botao" role="button">
-                <i class="fas fa-shopping-bag"></i> COMPRAR
-              </button>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="owl-carousel owl-theme" id="carousel-1">
-          <div class="item">
-            <div class="card card-filme">
-              <h3 class="titulo">VINGADORES GUERRA INFINITA</h3>
-              <p class="descricao">descrição do filme-série</p>
-              <div class="botoes">
-                <button class="botao" role="button">
-                  <i class="fas fa-play"></i> TRAILER
-                </button>
-                <button class="botao" role="button">
-                  <i class="fas fa-shopping-bag"></i> COMPRAR
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="card card-serie">
-              <h3 class="titulo">VIKINGS</h3>
-              <p class="descricao">descrição do filme-série</p>
-              <div class="botoes">
-                <button class="botao" role="button">
-                  <i class="fas fa-play"></i> TRAILER
-                </button>
-                <button class="botao" role="button">
-                  <i class="fas fa-shopping-bag"></i> COMPRAR
-                </button>
-              </div>
-            </div>
-          </div>
+    <header>
+      <nav class="topnav" id="myTopnav">
+        <div class="logo-container">
+          <h2 class="logo"><i class="far fa-play-circle"></i> UWR VÍDEOS</h2>
         </div>
+        <div class="links">
+          <a href="#"><i class="fas fa-home"></i> Início</a>
+          <a href="#"><i class="fas fa-film"></i> Filmes</a>
+          <a href="#"><i class="fas fa-tv"></i> Séries</a>
+          <a href="javascript:void(0);" class="icon" onclick="navResponsivo()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="container-geral">
+      <main>
+        <div class="card" id="conteudo"></div>
       </main>
 
       <section>
-        <div class="carrossel-filmes">
+        <div class="carrossel">
           <div class="owl-carousel owl-theme" id="carousel-2">
             <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/avengers3.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/filmes/avengers3.jpg"
+                  alt="Vingadores Guerra Infinita"
+              /></a>
+            </div>
+            <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/convencaobruxas.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/filmes/convencaobruxas.jpg"
+                  alt="Convenção das Bruxas"
+              /></a>
+            </div>
+            <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/coringa.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/filmes/coringa.jpg"
+                  alt="Coringa"
+              /></a>
+            </div>
+            <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/godzilla2.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/filmes/godzilla2.jpg"
+                  alt="Godzilla II Rei dos Monstros"
+              /></a>
+            </div>
+            <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/legadoexplosivo.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/filmes/legadoexplosivo.jpg"
+                  alt="Legado Explosivo"
+              /></a>
+            </div>
+            <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/novosmutantes.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/filmes/novosmutantes.jpg"
+                  alt="Os Novos Mutantes"
+              /></a>
+            </div>
+            <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/soul.html')"
+                ><img class="box-filme" src="./img/filmes/soul.jpg" alt="Soul"
+              /></a>
+            </div>
+            <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/tenet.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/filmes/tenet.jpg"
+                  alt="Tenet"
+              /></a>
+            </div>
+            <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/ww84.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/filmes/ww84.jpg"
+                  alt="Mulher Maravilha 1984"
+              /></a>
+            </div>
+            <div class="item">
+              <a href="#" onclick="CarregaPage('/filmes/zonacombate.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/filmes/zonacombate.jpg"
+                  alt="Zona de Combate"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carrossel">
+          <div class="owl-carousel owl-theme" id="carousel-3">
+            <div class="item">
+              <img class="box-filme" src="./img/series/arrow.jpg" alt="Arrow" />
+            </div>
+            <div class="item">
               <img
                 class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
+                src="./img/series/cobrakai.jpg"
+                alt="Cobra Kai"
+              />
+            </div>
+            <div class="item">
+              <img class="box-filme" src="./img/series/dark.jpg" alt="Dark" />
+            </div>
+            <div class="item">
+              <img
+                class="box-filme"
+                src="./img/series/gambito.jpg"
+                alt="O Gambito da Rainha"
               />
             </div>
             <div class="item">
               <img
                 class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
+                src="./img/series/lacasadepapel.jpg"
+                alt="La Casa de Papel"
               />
             </div>
             <div class="item">
               <img
                 class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
+                src="./img/series/peaky.jpg"
+                alt="Peaky Blinders"
               />
             </div>
             <div class="item">
               <img
                 class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
+                src="./img/series/sabrina.jpg"
+                alt="Sabrina"
               />
             </div>
             <div class="item">
               <img
                 class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
+                src="./img/series/strangerthings.jpg"
+                alt="Stranger Things"
               />
             </div>
             <div class="item">
               <img
                 class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
+                src="./img/series/theflash.jpg"
+                alt="The Flash"
               />
             </div>
             <div class="item">
               <img
                 class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
-              />
-            </div>
-            <div class="item">
-              <img
-                class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
-              />
-            </div>
-            <div class="item">
-              <img
-                class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
-              />
-            </div>
-            <div class="item">
-              <img
-                class="box-filme"
-                src="https://placehold.it/300x220"
-                alt=""
+                src="./img/series/umbrella.jpg"
+                alt="Umbrella Academy"
               />
             </div>
           </div>
         </div>
       </section>
     </div>
-
     <footer>
       <div class="rodape">
         <ul>

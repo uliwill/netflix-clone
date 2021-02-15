@@ -1,7 +1,5 @@
 :root {
   --cinza: #b4b8bf;
-  --azul-forte: #0554f2;
-  --azul-claro: #056cf2;
   --grafite: #313640;
   --branco: #f2f2f2;
 }
@@ -24,13 +22,18 @@ body .container-geral {
   margin: 0 auto;
 }
 
+header {
+  background-color: var(--grafite);
+}
+
 /* BARRA DE NAVEGAÇÃO RESPONSIVA */
 .topnav {
   overflow: hidden;
-  background-color: var(--grafite);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .topnav .links {
@@ -69,69 +72,55 @@ body .container-geral {
   display: none;
 }
 
-/* FILME PRINCIPAL */
+/* CARD CONTEÚDO */
 
-.filme-principal {
-  font-size: 16px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("../img/capa-vingadores3.jpg");
-  background-size: cover;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+.card {
+  background: var(--grafite);
   color: var(--branco);
+  margin-top: 5px;
+  border-color: var(--grafite);
+  border-width: 1px;
+  border-style: solid;
 }
 
-.filme-principal .container .titulo {
-  margin-bottom: 20px;
-  margin-left: 10px;
-  font-size: 40px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.card .card-video {
+  height: 500px;
 }
 
-.filme-principal .container .descricao {
-  margin-bottom: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
+.card .card-descricao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 330px;
+}
+
+.card .card-capa img {
+  width: 220px;
+  height: 330px;
+  display: block;
+}
+
+.card .card-sinopse {
+  width: 100%;
+  padding: 15px;
+}
+
+.card .card-sinopse .titulo {
+  padding-bottom: 15px;
+}
+
+.card .card-sinopse .sinopse {
+  text-indent: 15px;
   text-align: justify;
-  width: 50%;
-}
-
-.filme-principal .container .botoes {
-  margin-left: 10px;
-}
-
-.filme-principal .container .botao {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: #fff;
-  padding: 15px 30px;
-  margin-right: 15px;
-  margin-bottom: 5px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: 0.3s ease all;
-}
-
-.filme-principal .container .botao:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.filme-principal .container .botao i {
-  margin-right: 8px;
 }
 
 /* CARROSSEL DE FILMES */
 
-.carrossel-filmes {
+.carrossel {
   margin-top: 5px;
 }
 
-.carrossel-filmes .box-filme {
+.carrossel .box-filme {
   display: block;
   height: 300px;
   width: 220px;
@@ -139,17 +128,16 @@ body .container-geral {
 
 /* CARD FILMES E SÉRIES */
 
-
 .card.card-filme {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-  url("../img/capa-vingadores3.jpg");
+    url("../img/capa-vingadores3.jpg");
   background-size: cover;
   min-height: 500px;
 }
 
 .card.card-serie {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-  url("../img/capa-vikings.jpg");
+    url("../img/capa-vikings.jpg");
   background-size: cover;
   min-height: 500px;
 }
