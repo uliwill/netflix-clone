@@ -1,16 +1,10 @@
 $('#carousel-1').owlCarousel({
-    items: 1,
-    margin: 10,
-    autoHeight: true
-});
-
-$('#carousel-2').owlCarousel({
     loop: false,
     margin: 10,
     responsiveClass: true,
     responsive: {
         0: {
-            items: 1,
+            items: 2,
             nav: false
         },
         600: {
@@ -25,13 +19,13 @@ $('#carousel-2').owlCarousel({
     }
 })
 
-$('#carousel-3').owlCarousel({
+$('#carousel-2').owlCarousel({
     loop: false,
     margin: 10,
     responsiveClass: true,
     responsive: {
         0: {
-            items: 1,
+            items: 2,
             nav: false
         },
         600: {

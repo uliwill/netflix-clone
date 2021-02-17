@@ -21,9 +21,12 @@
           <h2 class="logo"><i class="far fa-play-circle"></i> UWR VÍDEOS</h2>
         </div>
         <div class="links">
-          <a href="#"><i class="fas fa-home"></i> Início</a>
-          <a href="#"><i class="fas fa-film"></i> Filmes</a>
-          <a href="#"><i class="fas fa-tv"></i> Séries</a>
+          <a href="#" id="btn-filmes" class="selected"
+            ><i class="fas fa-film"></i> Filmes</a
+          >
+          <a href="#" id="btn-series" class=""
+            ><i class="fas fa-tv"></i> Séries</a
+          >
           <a href="javascript:void(0);" class="icon" onclick="navResponsivo()">
             <i class="fa fa-bars"></i>
           </a>
@@ -36,8 +39,8 @@
       </main>
 
       <section>
-        <div class="carrossel">
-          <div class="owl-carousel owl-theme" id="carousel-2">
+        <div class="carrossel" id="car-1">
+          <div class="owl-carousel owl-theme" id="carousel-1">
             <div class="item">
               <a href="#" onclick="CarregaPage('/filmes/avengers3.html')"
                 ><img
@@ -118,69 +121,84 @@
           </div>
         </div>
 
-        <div class="carrossel">
-          <div class="owl-carousel owl-theme" id="carousel-3">
+        <div class="carrossel hide" id="car-2">
+          <div class="owl-carousel owl-theme" id="carousel-2">
             <div class="item">
-              <img class="box-filme" src="./img/series/arrow.jpg" alt="Arrow" />
+              <a href="#" onclick="CarregaPage('/series/arrow.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/series/arrow.jpg"
+                  alt="Arrow"
+              /></a>
             </div>
             <div class="item">
-              <img
-                class="box-filme"
-                src="./img/series/cobrakai.jpg"
-                alt="Cobra Kai"
-              />
+              <a href="#" onclick="CarregaPage('/series/cobrakai.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/series/cobrakai.jpg"
+                  alt="Cobra Kai"
+              /></a>
             </div>
             <div class="item">
-              <img class="box-filme" src="./img/series/dark.jpg" alt="Dark" />
+              <a href="#" onclick="CarregaPage('/series/dark.html')"
+                ><img class="box-filme" src="./img/series/dark.jpg" alt="Dark"
+              /></a>
             </div>
             <div class="item">
-              <img
-                class="box-filme"
-                src="./img/series/gambito.jpg"
-                alt="O Gambito da Rainha"
-              />
+              <a href="#" onclick="CarregaPage('/series/gambito.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/series/gambito.jpg"
+                  alt="O Gambito da Rainha"
+              /></a>
             </div>
             <div class="item">
-              <img
-                class="box-filme"
-                src="./img/series/lacasadepapel.jpg"
-                alt="La Casa de Papel"
-              />
+              <a href="#" onclick="CarregaPage('/series/lacasadepapel.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/series/lacasadepapel.jpg"
+                  alt="La Casa de Papel"
+              /></a>
             </div>
             <div class="item">
-              <img
-                class="box-filme"
-                src="./img/series/peaky.jpg"
-                alt="Peaky Blinders"
-              />
+              <a href="#" onclick="CarregaPage('/series/peaky.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/series/peaky.jpg"
+                  alt="Peaky Blinders"
+              /></a>
             </div>
             <div class="item">
-              <img
-                class="box-filme"
-                src="./img/series/sabrina.jpg"
-                alt="Sabrina"
-              />
+              <a href="#" onclick="CarregaPage('/series/sabrina.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/series/sabrina.jpg"
+                  alt="Sabrina"
+              /></a>
             </div>
             <div class="item">
-              <img
-                class="box-filme"
-                src="./img/series/strangerthings.jpg"
-                alt="Stranger Things"
-              />
+              <a href="#" onclick="CarregaPage('/series/strangerthings.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/series/strangerthings.jpg"
+                  alt="Stranger Things"
+              /></a>
             </div>
             <div class="item">
-              <img
-                class="box-filme"
-                src="./img/series/theflash.jpg"
-                alt="The Flash"
-              />
+              <a href="#" onclick="CarregaPage('/series/theflash.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/series/theflash.jpg"
+                  alt="The Flash"
+              /></a>
             </div>
             <div class="item">
-              <img
-                class="box-filme"
-                src="./img/series/umbrella.jpg"
-                alt="Umbrella Academy"
-              />
+              <a href="#" onclick="CarregaPage('/series/umbrella.html')"
+                ><img
+                  class="box-filme"
+                  src="./img/series/umbrella.jpg"
+                  alt="Umbrella Academy"
+              /></a>
             </div>
           </div>
         </div>

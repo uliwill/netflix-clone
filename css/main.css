@@ -51,6 +51,7 @@ header {
 }
 
 .topnav a {
+  border: 3px solid var(--grafite);
   border-radius: 5px;
   display: block;
   color: var(--branco);
@@ -63,9 +64,11 @@ header {
 }
 
 .topnav a:hover {
-  color: var(--grafite);
-  background: var(--cinza);
+  border: 3px solid var(--cinza);
   opacity: 0.8;
+}
+.topnav a.selected {
+  border-bottom: 3px solid var(--cinza);
 }
 
 .topnav .icon {
@@ -165,4 +168,8 @@ footer .rodape ul li {
 footer .rodape ul li a {
   text-decoration: none;
   color: var(--branco);
+}
+
+.hide {
+  display: none;
 }

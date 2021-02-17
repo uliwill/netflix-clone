@@ -17,3 +17,19 @@ function navResponsivo() {
         x.className = "topnav";
     }
 }
+
+$("#btn-series").click(function () {
+    $("#btn-filmes").removeClass("selected");
+    $("#btn-series").addClass("selected");
+    $("#car-2").removeClass("hide");
+    $("#car-1").addClass(" carrossel hide");
+    $("#conteudo").load("./series/arrow.html");
+});
+
+$("#btn-filmes").click(function () {
+    $("#btn-series").removeClass("selected");
+    $("#btn-filmes").addClass("selected");
+    $("#car-1").removeClass("hide");
+    $("#car-2").addClass(" carrossel hide");
+    $("#conteudo").load("./filmes/avengers3.html");
+});
