@@ -16,3 +16,5 @@
 # uwr-videos
 
 ### Projeto final do curso, executado sobre modelo Netflix, com todos os links e botões funcionais.
+
+### No ar: https://ulisses-uwr-videos.netlify.app/
